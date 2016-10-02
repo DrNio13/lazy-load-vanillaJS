@@ -1,27 +1,8 @@
-var LazyVanillaJS = (function(window,document) {
-
-    var serviceApi = {
-        start: getImages
-    };
-
-    function getImages(){
-        var images = document.getElementsByTagName('img');
-        var lazyImages = [];
-        for (var i=0; i < images.length; i++) {
-            if (images[i].hasAttribute('data-lazyImg-vanilla')) {
-                lazyImages.push(images[i]);
-            }
-        }
-
-        printImages(lazyImages);
-    }
-
-    function printImages(lazyImg) {
-        console.log(lazyImg);
-    }
-
-    return serviceApi;
-
-})(window,document);
-
-LazyVanillaJS.start();
+// Configuration object for the plugin
+// Cases if you want the plugin to:
+LazyVanillaJS.config({
+    resizeMode: true,   // run on resize event
+    scrollMode: true,   // run on resize event
+    threshold: 0,       // Positive or 0 - Small number
+    delay: 66            // Positive or 0 - Small number means immediate fetch of the images
+});

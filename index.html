@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <title>Lazy Load Images Demo</title>
+    <style>
+        img {
+            height: 100px;
+        }
+    </style>
 </head>
 <body style="">
 
-<img src="http://www.iett.istanbul/images/loading.gif" data-lazyImg-vanilla="http://dreamatico.com/data_images/kitten/kitten-1.jpg">
-<img src="http://www.iett.istanbul/images/loading.gif" data-lazyImg-vanilla="http://dreamatico.com/data_images/kitten/kitten-2.jpg">
-<img src="http://www.iett.istanbul/images/loading.gif" data-lazyImg-vanilla="http://dreamatico.com/data_images/kitten/kitten-3.jpg">
-<img src="http://www.iett.istanbul/images/loading.gif" data-lazyImg-vanilla="http://dreamatico.com/data_images/kitten/kitten-4.jpg">
+<h1>Lazy load Images Demo</h1>
 
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten1.jpg">
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten2.jpg">
+
+<div id="box1" style="width: 100px; height: 500px; background: rgb(30,30,30)"></div>
+
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten3.jpg">
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten4.jpg">
+
+<div id="box2" style="width: 100px; height: 500px; background: blue"></div>
+
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten5.jpg">
+<img src="assets/images/loading.gif" data-lazyImg-vanilla="assets/images/kitten6.jpg">
+
+<!-- Load plugin -->
+<script src="assets/js/lazy-load-vanilla-js.js"></script>
+
+<!-- Your main js -->
 <script src="app.js"></script>
+
 </body>
 </html>
