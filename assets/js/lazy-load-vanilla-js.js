@@ -1,3 +1,5 @@
+// 1. Fix when scroll from bottom to top
+
 var LazyVanillaJS = (function(window,document) {
 
     var lazyAttribute = 'data-lazyImg-vanilla';
@@ -68,7 +70,7 @@ var LazyVanillaJS = (function(window,document) {
 
     function isInViewport(img){
         var box = img.getBoundingClientRect();
-        console.log(window.innerHeight, window.scrollY, box.bottom);
+        // console.log(window.innerHeight, window.scrollY, box.bottom);
         return (
             box.top > 0 &&
             box.bottom > 0 &&
